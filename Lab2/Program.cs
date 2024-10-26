@@ -60,7 +60,7 @@ public class Program
         // code here
 
         double r = 2.0;
-        if (x * x + y * y == r * r & Math.Abs(x*x+y*y-r*r) <= 0.001)
+        if (x * x + y * y == r * r && Math.Abs(x*x+y*y-r*r) <= 0.001)
         {
             answer = true;
         }
@@ -260,11 +260,11 @@ public class Program
         double answer = 0;
 
         // code here
-        double r = 0;  //ðîñò îäíîãî ó÷åíèêà
-        double s = 0; //îáùèé ðîñò ó÷åíèåêîâ 
+        double r = 0;  //Ñ€Ð¾ÑÑ‚ Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ°
+        double s = 0; //Ð¾Ð±Ñ‰Ð¸Ð¹ Ñ€Ð¾ÑÑ‚ ÑƒÑ‡ÐµÐ½Ð¸ÐµÐºÐ¾Ð² 
         for (int i = 0; i < n; i++)
         {
-            Console.Write($"Ââåäèòå ðîñò ó÷åíèêà {i + 1} ");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð¾ÑÑ‚ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i + 1} ");
             r = Convert.ToDouble(Console.ReadLine());
             s += r;
         }
@@ -283,9 +283,9 @@ public class Program
         double x, y;
         for (int i = 0; i < n; i++)
         {
-            Console.Write($"Ââåäèòå êîîðäèíàòó õ {i + 1} òî÷êè");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ Ñ… {i + 1} Ñ‚Ð¾Ñ‡ÐºÐ¸");
             x = double.Parse(Console.ReadLine());
-            Console.Write($"Ââåäèòå êîîðäèíàòó y {i + 1} òî÷êè");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ y {i + 1} Ñ‚Ð¾Ñ‡ÐºÐ¸");
             y = double.Parse(Console.ReadLine());
 
             if ((x - a) * (x - a) + (y - b) * (y - b) <= r * r) 
@@ -303,12 +303,12 @@ public class Program
         double answer = 0;
 
         // code here
-        double wes = 0; //âåñ 1 ó÷åíèêà
+        double wes = 0; //Ð²ÐµÑ 1 ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ°
         double milk = 0; 
 
         for (int i = 0; i < n; i++)
         {
-            Console.Write($"Ââåäèòå âåñ ó÷åíèêà {i + 1} ");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²ÐµÑ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i + 1} ");
             wes = double.Parse(Console.ReadLine());
 
             if (wes < 30)
@@ -328,18 +328,18 @@ public class Program
        
         // code here
         double x, y, x0, y0;
-        Console.WriteLine("Ââåäèòå çíà÷åíèå õ0");
+        Console.WriteLine("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ñ…0");
         x0 = Double.Parse(Console.ReadLine());
-        Console.WriteLine("Ââåäèòå çíà÷åíèå ó0");
+        Console.WriteLine("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ñƒ0");
         y0 = Double.Parse(Console.ReadLine());
         
         for (int i = 0; i < n; i++)
         {
-            Console.WriteLine("Ââåäèòå çíà÷åíèå õ");
+            Console.WriteLine("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ñ…");
             x = Double.Parse(Console.ReadLine());
-            Console.WriteLine("Ââåäèòå çíà÷åíèå ó");
+            Console.WriteLine("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ñƒ");
             y = Double.Parse(Console.ReadLine());
-            if ((x - x0) + (y - y0) > r1 * r1 & (x - x0) + (y - y0) < r2 * r2)
+            if ((x - x0) + (y - y0) > r1 * r1 && (x - x0) + (y - y0) < r2 * r2)
             {
                 answer++;
             }
@@ -356,7 +356,7 @@ public class Program
         // code here
         for (int i = 0; i < n; i++)
         {
-            Console.Write($"Ââåäèòå ðåçóëüòàò ó÷àñòíèêà {i + 1} ");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸ÐºÐ° {i + 1} ");
             rezultat = double.Parse(Console.ReadLine());
             if (rezultat <= norm)
             {
@@ -376,11 +376,11 @@ public class Program
         double x, y;
         for (int i = 1; i <= n; i++)
         {
-            Console.Write($"Ââåäèòå êîîðäèíàòó õ {i + 1} òî÷êè");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ Ñ… {i + 1} Ñ‚Ð¾Ñ‡ÐºÐ¸");
             x = Double.Parse(Console.ReadLine());
-            Console.Write($"Ââåäèòå êîîðäèíàòó y {i + 1} òî÷êè");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ y {i + 1} Ñ‚Ð¾Ñ‡ÐºÐ¸");
             y = Double.Parse(Console.ReadLine());
-            if (x >= 0 & x <= Math.PI & y >= 0 & y <= Math.Sin(x))
+            if (x >= 0 && x <= Math.PI && y >= 0 && y <= Math.Sin(x))
             {
                 answer++;
             }
@@ -399,26 +399,26 @@ public class Program
         double x, y;
         for (int i = 1; i <= n; i++)
         {
-            Console.Write($"Ââåäèòå êîîðäèíàòó õ {i + 1} òî÷êè");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ Ñ… {i + 1} Ñ‚Ð¾Ñ‡ÐºÐ¸");
             x = Double.Parse(Console.ReadLine());
-            Console.Write($"Ââåäèòå êîîðäèíàòó y {i + 1} òî÷êè");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ y {i + 1} Ñ‚Ð¾Ñ‡ÐºÐ¸");
             y = Double.Parse(Console.ReadLine());
             if (x > 0 & y > 0)
             {
                 answer1++;
                 Console.WriteLine(1);
             }
-            if (x < 0 & y < 0)
+            if (x < 0 && y < 0)
             {
                 answer3++;
                 Console.WriteLine(3);
             }
-            if (x < 0 & y > 0)
+            if (x < 0 && y > 0)
             {
                 
                 Console.WriteLine(2);
             }
-            if (x > 0 & y < 0)
+            if (x > 0 && y < 0)
             {
                
                 Console.WriteLine(4);
@@ -440,9 +440,9 @@ public class Program
         int r = 0;
         for (int i = 0; i <= n; i++)
         {
-            Console.Write($"Ââåäèòå êîîðäèíàòó õ {i + 1} òî÷êè");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ Ñ… {i + 1} Ñ‚Ð¾Ñ‡ÐºÐ¸");
             x = Double.Parse(Console.ReadLine());
-            Console.Write($"Ââåäèòå êîîðäèíàòó y {i + 1} òî÷êè");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ y {i + 1} Ñ‚Ð¾Ñ‡ÐºÐ¸");
             y = Double.Parse(Console.ReadLine());
             r += 1;
             if (Math.Sqrt(x * x + y * y) < answerLength)
@@ -462,10 +462,10 @@ public class Program
         double answer = double.MaxValue;
 
         // code here
-        double rez = 0; //ðåç 1 ÷åëîâåêà
+        double rez = 0; //Ñ€ÐµÐ· 1 Ñ‡ÐµÐ»Ð¾Ð²ÐµÐºÐ°
         for (int i = 0; i < n; i++)
         {
-            Console.Write($"Ââåäèòå ðåçóëüòàò ñïîðòñìåíà {i + 1}");
+            Console.Write($"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ ÑÐ¿Ð¾Ñ€Ñ‚ÑÐ¼ÐµÐ½Ð° {i + 1}");
             rez = double.Parse(Console.ReadLine());
 
             if (rez < answer)
@@ -491,13 +491,13 @@ public class Program
         
         for (int i = 0; i < n; i++)
         {
-            Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà {i+1} çà 1 ýêçàìåí");
+            Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i+1} Ð·Ð° 1 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
             exz1 = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà {i + 1} çà 2 ýêçàìåí");
+            Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i + 1} Ð·Ð° 2 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
             exz2 = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà {i + 1} çà 3 ýêçàìåí");
+            Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i + 1} Ð·Ð° 3 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
             exz3 = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà {i + 1} çà 4 ýêçàìåí");
+            Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i + 1} Ð·Ð° 4 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
             exz4 = double.Parse(Console.ReadLine());
             if ((exz1 != 2 && exz1 != 3) && (exz2 != 2 && exz2 != 3) && (exz3 != 2 && exz3 != 3) && (exz4 != 2 && exz4 != 3))
             {
@@ -521,13 +521,13 @@ public class Program
         double s = 0;
         for (int i = 0; i < n; i++)
         {
-            Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà {i + 1} çà 1 ýêçàìåí");
+            Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i + 1} Ð·Ð° 1 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
             double exz1 = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà {i + 1} çà 2 ýêçàìåí");
+            Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i + 1} Ð·Ð° 2 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
             double exz2 = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà {i + 1} çà 3 ýêçàìåí");
+            Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i + 1} Ð·Ð° 3 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
             double exz3 = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà {i + 1} çà 4 ýêçàìåí");
+            Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° {i + 1} Ð·Ð° 4 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
             double exz4 = double.Parse(Console.ReadLine());
             s = s + exz1 + exz2 + exz3 + exz4;
             if ((exz1 == 2) || (exz2 == 2) || (exz3 == 2) || (exz4 == 2))
@@ -766,13 +766,13 @@ public class Program
             exz1_1 = Console.ReadLine();
             if (exz1_1 != "break")
             {
-                Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà çà 1 ýêçàìåí");
+                Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° Ð·Ð° 1 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
                 exz1 = double.Parse(exz1_1);
-                Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà çà 2 ýêçàìåí");
+                Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° Ð·Ð° 2 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
                 exz2 = double.Parse(Console.ReadLine());
-                Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà çà 3 ýêçàìåí");
+                Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° Ð·Ð° 3 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
                 exz3 = double.Parse(Console.ReadLine());
-                Console.WriteLine($"Ââåäèåòå îöåíêó ó÷åíèêà çà 4 ýêçàìåí");
+                Console.WriteLine($"Ð’Ð²ÐµÐ´Ð¸ÐµÑ‚Ðµ Ð¾Ñ†ÐµÐ½ÐºÑƒ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ° Ð·Ð° 4 ÑÐºÐ·Ð°Ð¼ÐµÐ½");
                 exz4 = double.Parse(Console.ReadLine());
                 s = s + exz1 + exz2 + exz3 + exz4;
                 if ((exz1 == 2) || (exz2 == 2) || (exz3 == 2) || (exz4 == 2))
